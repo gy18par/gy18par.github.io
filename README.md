@@ -1,3 +1,3 @@
-# gy18par.github.io
-# Hello World
+# gy18par
+# Hello World - be gentle!
 
