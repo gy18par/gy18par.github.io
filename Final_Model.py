@@ -127,7 +127,7 @@ for j in range(num_of_iterations):
             agents[i]._x = (agents[i]._x - 1) % 100
             
             
-# Move the agents mark 2
+# Action/ move agents mark 2
 for j in range(num_of_iterations):
     if (j % 100 == 0):
         
