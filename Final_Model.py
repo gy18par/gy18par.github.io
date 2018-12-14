@@ -154,7 +154,8 @@ for a in agents:
        
 
 # Save agent data to csv file
-f2 = open('dataout.csv', 'w', newline='') 
+# User defined file name
+f2 = open('in.csv', 'w', newline='')  		
 writer = csv.writer(f2, delimiter=',')
 for i in agents:		
 	writer.writerow(row)		
@@ -178,7 +179,10 @@ menu_bar = tkinter.Menu(root)
 root.config(menu=menu_bar)
 model_menu = tkinter.Menu(menu_bar)
 menu_bar.add_cascade(label="Model", menu=model_menu)
-model_menu.add_command(label="Run model", command=run) 
+model_menu.add_command(label="Run model", command=run)
+w = tkinter.Canvas(root, width=200, height=200)
+w.pack()
+w.create_rectangle(0, 0, 200, 200, fill="blue")
 
 
 # Display window
