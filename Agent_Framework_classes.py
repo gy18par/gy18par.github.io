@@ -8,7 +8,9 @@
 # __version__ 1.0.0
 
 
-# Agent_Framework_classes workflows 
+# Agent_Framework_classes workflows.
+# Accompanying agent code to use with Final_Model.py which is 
+# part of the same repository.
 
 
 # Start 
