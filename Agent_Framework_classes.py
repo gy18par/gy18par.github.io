@@ -13,6 +13,10 @@
 # part of the same repository.
 
 
+# Sources
+# http://www.geog.leeds.ac.uk/courses/computing/study/core-python/
+
+
 # Start 
 
 import random
