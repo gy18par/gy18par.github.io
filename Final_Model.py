@@ -52,6 +52,8 @@ import operator
 import Agent_Framework_classes
 import csv
 import tkinter
+import requests
+import bs4
 
 
 # Testing console 
@@ -187,5 +189,27 @@ w.create_rectangle(0, 0, 200, 200, fill="blue")
 
 # Display window
 tkinter.mainloop() 
+
+
+# For further use.....
+# Getting html data from web/ webscrapping (column information)
+url = 'https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part9/data.html'
+r = requests.get('http://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part9/data.html')
+content = r.text
+soup = bs4.BeautifulSoup(content, 'html.parser')
+td_xs = soup.find_all(attrs={"class" : "x"})
+td_ys = soup.find_all(attrs={"class" : "y"})
+td_zs = soup.find_all(attrs={"class" : "z"})
+
+
+# Cycling through all elements and looping
+trs = table.find_all('tr')
+for tr in trs:
+
+
+# Inserting text
+    tds = tr.find_all("td")
+for td in tds:
+    print (td.text)
 
 # End
